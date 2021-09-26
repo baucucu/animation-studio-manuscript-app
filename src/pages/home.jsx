@@ -8,9 +8,9 @@ const HomePage = () => (
         <Col width="40" >
           <Card className="elevation-4">
             <List noHairlines style={{margin:0}} slot="content">
-              <ListItem>Client name</ListItem>
-              <ListItem>Project name<Chip color="blue">Project status</Chip></ListItem>
-              <ListItem>Manuscript writer<Chip color="blue">Thomas Oddegaard</Chip></ListItem>
+              <ListItem>Client<Chip color="blue" outline>Client Name</Chip></ListItem>
+              <ListItem>Project<Chip color="blue">Project status</Chip><Chip color="blue" outline>Project Name</Chip></ListItem>
+              <ListItem>Manuscript writer<Chip color="blue" outline>Thomas Oddegaard</Chip></ListItem>
             </List>
           </Card>
 
