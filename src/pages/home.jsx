@@ -6,7 +6,7 @@ const HomePage = () => (
     <Block style={{marginBottom:0}}> 
       <Row>
         <Col width="40" >
-          <Card className="elevation-4">
+          <Card className="elevation-4" style={{height:180}}>
             <List noHairlines style={{margin:0}} slot="content">
               <ListItem>Client<Chip color="blue" outline>Client Name</Chip></ListItem>
               <ListItem>Project<Chip color="blue">Project status</Chip><Chip color="blue" outline>Project Name</Chip></ListItem>
@@ -16,7 +16,7 @@ const HomePage = () => (
 
         </Col>
         <Col width="30">
-          <Card className="elevation-4">
+          <Card className="elevation-4" style={{height:180}}>
             <Row slot="content">
               <Col>
                 <List noHairlines style={{margin:0}}>
@@ -38,7 +38,7 @@ const HomePage = () => (
         </Col>
         <Col width="30">
           <Block style={{margin:0}}>
-            <Card className="elevation-4">
+            <Card className="elevation-4" style={{height:180}}>
               
               <CardHeader style={{alignSelf: "center"}}>Time left to respond: <Chip color="blue">00:00:00:00</Chip> </CardHeader>
               <CardContent style={{paddingBottom:0}}>
@@ -51,7 +51,7 @@ const HomePage = () => (
                       value={2/8}
                       valueText="2/8"
                       valueTextColor="blue"
-                      // valueFontSize={10}
+                      valueFontSize={24}
                       borderColor="blue"
                       labelText="scenes"
                       labelTextColor="#333"
@@ -68,7 +68,7 @@ const HomePage = () => (
                       value={2/5}
                       valueText="2/5"
                       valueTextColor="blue"
-                      // valueFontSize={10}
+                      valueFontSize={24}
                       borderColor="blue"
                       labelText="revisions"
                       labelTextColor="#333"
