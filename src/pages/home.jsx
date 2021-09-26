@@ -6,7 +6,7 @@ const HomePage = () => (
     <Block style={{marginBottom:0}}> 
       <Row>
         <Col width="40" >
-          <Card>
+          <Card className="elevation-4">
             <List noHairlines style={{margin:0}} slot="content">
               <ListItem>Client name</ListItem>
               <ListItem>Project name<Chip color="blue">Project status</Chip></ListItem>
@@ -16,7 +16,7 @@ const HomePage = () => (
 
         </Col>
         <Col width="30">
-          <Card>
+          <Card className="elevation-4">
             <Row slot="content">
               <Col>
                 <List noHairlines style={{margin:0}}>
@@ -91,7 +91,7 @@ const HomePage = () => (
       </Row>
     </Block>
     <Block style={{display:'flex', flexDirection: 'row', margin:0}}>
-      <Swiper pagination navigation speed={500} slidesPerView={3.33} spaceBetween={20}>
+      <Swiper  navigation speed={500} slidesPerView={3.33} spaceBetween={20}>
       {[1,2,3,4,5,6,7,8].map( (card,id) => (
         <SwiperSlide>
           <Card key={id} className="demo-card-header-pic" className="elevation-4">
