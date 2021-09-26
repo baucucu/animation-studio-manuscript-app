@@ -51,12 +51,12 @@ const HomePage = () => (
                       value={2/8}
                       valueText="2/8"
                       valueTextColor="blue"
-                      valueFontSize={10}
+                      // valueFontSize={10}
                       borderColor="blue"
                       labelText="scenes"
                       labelTextColor="#333"
                       labelFontWeight={400}
-                      labelFontSize={12 }
+                      // labelFontSize={12 }
                       borderWidth={10}
                     />
                   </Col>
@@ -68,12 +68,12 @@ const HomePage = () => (
                       value={2/5}
                       valueText="2/5"
                       valueTextColor="blue"
-                      valueFontSize={10}
+                      // valueFontSize={10}
                       borderColor="blue"
                       labelText="revisions"
                       labelTextColor="#333"
                       labelFontWeight={400}
-                      labelFontSize={12 }
+                      // labelFontSize={12 }
                       borderWidth={10}
                     />
                   </Col>
