@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Navbar, Block,Chip, CardHeader,CardFooter, SwiperSlide,Swiper,BlockTitle,CardContent,Link, Row, Col, List, ListItem, Card, Button } from 'framework7-react';
+import { Page, Navbar, Block,Chip, CardHeader,CardFooter, Gauge, SwiperSlide,Swiper,BlockTitle,CardContent,Link, Row, Col, List, ListItem, Card, Button } from 'framework7-react';
 
 const HomePage = () => (
   <Page>
@@ -30,8 +30,34 @@ const HomePage = () => (
         <Col width="35">
           <Block style={{margin:0}}>
             <Card className="elevation-4">
-              <p slot="header">Time left to respond <Chip>00:00:00:00</Chip></p>
-              <p slot="content">Number of revisions <Chip >2/5</Chip></p>
+              
+              <CardContent>
+                <Row>
+                  <Col>
+                    <Gauge
+                      size={140}
+                      
+                      type="semicircle"
+                      value={2/5}
+                      valueText="2 revisions"
+                      valueTextColor="blue"
+                      valueFontSize={16}
+                      borderColor="blue"
+                      labelText="of 5 total"
+                      labelTextColor="#333"
+                      labelFontWeight={400}
+                      labelFontSize={12 }
+                      borderWidth={10}
+                    />
+                  </Col>
+                  <Col>
+                    <p slot="header">Time left to respond </p>
+                    <Chip>00:00:00:00</Chip>
+                  </Col>
+                </Row>
+                
+                
+              </CardContent>
               
               <CardFooter>
                 <Button small iconSize="small" iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
