@@ -3,35 +3,40 @@ import { Page, Navbar, Block,Chip, CardHeader,CardFooter, SwiperSlide,Swiper,Blo
 
 const HomePage = () => (
   <Page>
-    <Navbar title="Manuscript" />
+    {/* <Navbar title="Manuscript" /> */}
     {/* <BlockTitle>Manuscript</BlockTitle> */}
-    <Block strong>
+    <Block >
       <Row>
-        <Col width="33">
-          <List>
+        <Col width="35">
+          <List noHairlines>
             <ListItem>Client name</ListItem>
-            <ListItem>Project name</ListItem>
-            <ListItem><Chip>Project status</Chip></ListItem>
+            <ListItem>Project name <Chip>Project status</Chip></ListItem>
+            <ListItem>Manuscript writer</ListItem>
+            <ListItem></ListItem>
             
           </List>
         </Col>
-        <Col width="33">
-          <List>
-            <ListItem>Manuscript writer</ListItem>
+        <Col width="15">
+          <List noHairlines>
             <ListItem>Language</ListItem>
+            <ListItem>Word count</ListItem>  
+          </List>  
+        </Col>
+        <Col width="15">
+          <List noHairlines>
             <ListItem>Target video length:</ListItem>
-            <ListItem>Number of scenes</ListItem>
-            <ListItem>Word count</ListItem>
-          </List>
-        </Col><Col width="33">
+            <ListItem>Number of scenes</ListItem>  
+          </List> 
+        </Col>
+        <Col width="35">
           <Block>
             <Card>
-              <BlockTitle slot="header">Time left to respond <Chip>00:00:00:00</Chip></BlockTitle>
-              <BlockTitle slot="content">Number of revisions <Chip >2/5</Chip></BlockTitle>
+              <p slot="header">Time left to respond <Chip>00:00:00:00</Chip></p>
+              <p slot="content">Number of revisions <Chip >2/5</Chip></p>
               
               <Block slot="footer" style={{display: 'flex', flexDirection:'row', justifyContent:'space-between'}}>
-                <Button iconF7="alarm_fill" outline color="blue" style={{marginRight:"16px"}}>Ask for revision</Button>
-                <Button iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
+                <Button small iconSize="small" iconF7="alarm_fill" outline color="blue" style={{marginRight:"16px"}}>Ask for revision</Button>
+                <Button small iconSize="small" iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
               </Block>
             </Card>
           </Block>
