@@ -44,7 +44,7 @@ const HomePage = () => (
       </Row>
     </Block>
     <Block style={{display:'flex', flexDirection: 'row', margin:0}}>
-      <Swiper pagination navigation speed={500} slidesPerView={3} spaceBetween={20}>
+      <Swiper pagination navigation speed={500} slidesPerView={3.33} spaceBetween={20}>
       {[1,2,3,4,5,6].map( (card,id) => (
         <SwiperSlide>
           <Card key={id} className="demo-card-header-pic" className="elevation-4">
