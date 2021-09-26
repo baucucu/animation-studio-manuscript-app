@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Navbar, Block,Chip, BlockTitle, Row, Col, List, ListItem, Card, Button } from 'framework7-react';
+import { Page, Navbar, Block,Chip, CardHeader,CardFooter, SwiperSlide,Swiper,BlockTitle,CardContent,Link, Row, Col, List, ListItem, Card, Button } from 'framework7-react';
 
 const HomePage = () => (
   <Page>
@@ -29,15 +29,47 @@ const HomePage = () => (
               <BlockTitle slot="header">Time left to respond <Chip>00:00:00:00</Chip></BlockTitle>
               <BlockTitle slot="content">Number of revisions <Chip >2/5</Chip></BlockTitle>
               
-              <span slot="footer" style={{display: 'flex', flexDirection:'row', justifyContent:'space-between'}}>
+              <Block slot="footer" style={{display: 'flex', flexDirection:'row', justifyContent:'space-between'}}>
                 <Button iconF7="alarm_fill" outline color="blue" style={{marginRight:"16px"}}>Ask for revision</Button>
                 <Button iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
-              </span>
+              </Block>
             </Card>
-            <Card></Card>
           </Block>
+          
         </Col>
       </Row>
+    </Block>
+    <Block style={{display:'flex', flexDirection: 'row'}}>
+    <Swiper pagination navigation speed={500} slidesPerView={3} spaceBetween={20}>
+    {[1,2,3,4,5,6].map( (card,id) => (
+      <SwiperSlide>
+        <Card key={id} className="demo-card-header-pic">
+          <CardHeader
+            className="no-border"
+            valign="bottom"
+            style={{
+              backgroundImage: 'url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg)',
+              height: '200px',
+            }}
+          >
+            {/* Journey To Mountains */}
+          </CardHeader>
+          <CardContent>
+            <p className="date">Posted on January 21, 2015</p>
+            <p>
+              Quisque eget vestibulum nulla. 
+            </p>
+          </CardContent>
+          <CardFooter >
+            <Button small fill raised color="green" iconF7="checkmark_alt" iconSize="small" style={{marginRight: '8px'}}>Approve</Button>
+            <Button small outline color="blue" iconF7="bubble_left_bubble_right" iconSize="small">Comment</Button>
+          </CardFooter>
+        </Card>
+      </SwiperSlide>))}
+      
+      
+    </Swiper>
+      
     </Block>
   </Page>
 );
