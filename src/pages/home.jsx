@@ -45,7 +45,7 @@ const HomePage = () => (
                 <Row style={{display: 'flex', marginBottom:0}} >
                   <Col style={{display:"flex", flexDirection:"column",justifyContent: 'center'}}>
                     <Gauge
-                      size={128}
+                      size={130}
                       
                       type="semicircle"
                       value={2/8}
@@ -62,7 +62,7 @@ const HomePage = () => (
                   </Col>
                   <Col style={{display:"flex", flexDirection:"column",justifyContent: 'center'}}>
                     <Gauge
-                      size={128}
+                      size={130}
                       
                       type="semicircle"
                       value={2/5}
