@@ -10,21 +10,21 @@ const HomePage = () => (
             <ListItem>Client name</ListItem>
             <ListItem>Project name</ListItem>
             <ListItem><Chip color="blue">Project status</Chip></ListItem>
-            <ListItem>Manuscript writer</ListItem>
+            <ListItem>Manuscript writer<Chip>Thomas Oddegaard</Chip></ListItem>
             <ListItem></ListItem>
             
           </List>
         </Col>
         <Col width="20">
           <List noHairlines style={{margin:0}}>
-            <ListItem>Language</ListItem>
-            <ListItem>Target video length:</ListItem>
+            <ListItem>Language<Chip>Swedish</Chip></ListItem>
+            <ListItem>Target video length:<Chip>60s</Chip></ListItem>
           </List>  
         </Col>
         <Col width="20">
           <List noHairlines style={{margin:0}}>
-            <ListItem>Word count</ListItem>  
-            <ListItem>Number of scenes</ListItem>  
+            <ListItem>Word count<Chip>354</Chip></ListItem>  
+            <ListItem>Number of scenes<Chip>6</Chip></ListItem>  
           </List> 
         </Col>
         <Col width="35">
