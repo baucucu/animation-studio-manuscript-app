@@ -9,7 +9,7 @@ const HomePage = () => (
           <List noHairlines style={{margin:0}}>
             <ListItem>Client name</ListItem>
             <ListItem>Project name</ListItem>
-            <ListItem><Chip>Project status</Chip></ListItem>
+            <ListItem><Chip color="blue">Project status</Chip></ListItem>
             <ListItem>Manuscript writer</ListItem>
             <ListItem></ListItem>
             
@@ -32,8 +32,8 @@ const HomePage = () => (
             <Card className="elevation-4">
               
               <CardContent>
-                <Row>
-                  <Col>
+                <Row style={{display: 'flex'}}>
+                  <Col style={{display:"flex", flexDirection:"column",justifyContent: 'center'}}>
                     <Gauge
                       size={140}
                       
@@ -50,9 +50,9 @@ const HomePage = () => (
                       borderWidth={10}
                     />
                   </Col>
-                  <Col>
+                  <Col style={{display:"flex", flexDirection:"column", alignItems: "center"}}>
                     <p slot="header">Time left to respond </p>
-                    <Chip>00:00:00:00</Chip>
+                    <Chip color="blue">00:00:00:00</Chip>
                   </Col>
                 </Row>
                 
