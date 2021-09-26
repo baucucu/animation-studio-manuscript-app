@@ -3,10 +3,10 @@ import { Page, Navbar, Block,Chip, CardHeader,CardFooter, SwiperSlide,Swiper,Blo
 
 const HomePage = () => (
   <Page>
-    <Block >
+    <Block style={{marginBottom:0}}>
       <Row>
         <Col width="25">
-          <List noHairlines>
+          <List noHairlines style={{margin:0}}>
             <ListItem>Client name</ListItem>
             <ListItem>Project name</ListItem>
             <ListItem><Chip>Project status</Chip></ListItem>
@@ -16,19 +16,19 @@ const HomePage = () => (
           </List>
         </Col>
         <Col width="20">
-          <List noHairlines>
+          <List noHairlines style={{margin:0}}>
             <ListItem>Language</ListItem>
             <ListItem>Target video length:</ListItem>
           </List>  
         </Col>
         <Col width="20">
-          <List noHairlines>
+          <List noHairlines style={{margin:0}}>
             <ListItem>Word count</ListItem>  
             <ListItem>Number of scenes</ListItem>  
           </List> 
         </Col>
         <Col width="35">
-          <Block>
+          <Block style={{margin:0}}>
             <Card className="elevation-4">
               <p slot="header">Time left to respond <Chip>00:00:00:00</Chip></p>
               <p slot="content">Number of revisions <Chip >2/5</Chip></p>
@@ -43,7 +43,7 @@ const HomePage = () => (
         </Col>
       </Row>
     </Block>
-    <Block style={{display:'flex', flexDirection: 'row'}}>
+    <Block style={{display:'flex', flexDirection: 'row', margin:0}}>
       <Swiper pagination navigation speed={500} slidesPerView={3} spaceBetween={20}>
       {[1,2,3,4,5,6].map( (card,id) => (
         <SwiperSlide>
