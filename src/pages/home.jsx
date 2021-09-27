@@ -91,9 +91,9 @@ const HomePage = ({f7route, f7router}) => {
                     </Col>
                   </Row>
                 </CardContent>
-                <CardFooter >
+                <CardFooter>
                   <Button small iconSize="small" iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
-                  <Button small color="blue" style={{marginRight:"16px"}}>Ask for revision</Button>
+                  <Button small color="blue">Ask for revision</Button>
                 </CardFooter>
               </Card>
             </Block>
