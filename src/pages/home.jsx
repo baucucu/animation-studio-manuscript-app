@@ -46,10 +46,11 @@ const HomePage = ({f7route, f7router}) => {
           <Col width="30">
             <Block style={{margin:0}}>
               <Card className="elevation-4" style={{height:180}}>
-                
-                <CardHeader style={{alignSelf: "center"}}>
-                  Time left to respond: 
-                  <Chip color="blue">00:00:00:00</Chip> 
+                <CardHeader >
+                  <div>
+                    Time to respond  
+                    <Chip color="blue" style={{marginLeft:8}}>00:00:00:00</Chip> 
+                  </div>
                   <Button iconF7=""  small>Extend time</Button>
                 </CardHeader>
                 <CardContent style={{paddingBottom:0}}>
@@ -90,10 +91,9 @@ const HomePage = ({f7route, f7router}) => {
                     </Col>
                   </Row>
                 </CardContent>
-
                 <CardFooter >
-                    <Button small iconSize="small" iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
-                    <Button small color="blue" style={{marginRight:"16px"}}>Ask for revision</Button>
+                  <Button small iconSize="small" iconF7="checkmark_alt" raised fill color="green">Approve manuscript</Button>
+                  <Button small color="blue" style={{marginRight:"16px"}}>Ask for revision</Button>
                 </CardFooter>
               </Card>
             </Block>
