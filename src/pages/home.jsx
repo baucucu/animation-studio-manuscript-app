@@ -38,7 +38,7 @@ const HomePage = ({f7route, f7router}) => {
                   <Button  slot="footer" iconF7="speaker_1_fill" small iconSize="small" color="purple" fill raised>Listen to AI Voiceover</Button>
                   <Badge color="white" tooltip="Tooltip text"><Icon size="medium"  color="black" f7="info_circle_fill"></Icon></Badge>
                 </div>
-                <Button fill raised color="purple" iconF7="cloud_download" small iconSize="small">Download PDF</Button>
+                <Button  color="blue" small>Download PDF</Button>
               </CardFooter>
             </Card>
             
