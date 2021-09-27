@@ -124,19 +124,19 @@ const HomePage = ({f7route, f7router}) => {
                 
               </CardContent>
               <CardContent>
-                <Icon f7="circle_grid_3x3"></Icon>
+                <Icon f7="circle_grid_3x3" style={{marginRight: 8}}></Icon>
                 Section name
               </CardContent>
               <CardContent>
-                <Icon f7="circle_grid_3x3"></Icon>
+                <Icon f7="circle_grid_3x3" style={{marginRight: 8}}></Icon>
                 Section name
               </CardContent>
               <CardContent>
-                <Icon f7="circle_grid_3x3"></Icon>
+                <Icon f7="circle_grid_3x3" style={{marginRight: 8}}></Icon>
                 Section name
               </CardContent>
               <CardContent>
-                <Icon f7="circle_grid_3x3"></Icon>
+                <Icon f7="circle_grid_3x3" style={{marginRight: 8}}></Icon>
                 Section name
               </CardContent>
               <CardFooter >
